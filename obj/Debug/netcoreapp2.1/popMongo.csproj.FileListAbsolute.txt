@@ -1,0 +1,11 @@
+/home/mgarcia/testes/popMongo/bin/Debug/netcoreapp2.1/popMongo.deps.json
+/home/mgarcia/testes/popMongo/bin/Debug/netcoreapp2.1/popMongo.runtimeconfig.json
+/home/mgarcia/testes/popMongo/bin/Debug/netcoreapp2.1/popMongo.runtimeconfig.dev.json
+/home/mgarcia/testes/popMongo/bin/Debug/netcoreapp2.1/popMongo.dll
+/home/mgarcia/testes/popMongo/bin/Debug/netcoreapp2.1/popMongo.pdb
+/home/mgarcia/testes/popMongo/obj/Debug/netcoreapp2.1/popMongo.csprojAssemblyReference.cache
+/home/mgarcia/testes/popMongo/obj/Debug/netcoreapp2.1/popMongo.csproj.CoreCompileInputs.cache
+/home/mgarcia/testes/popMongo/obj/Debug/netcoreapp2.1/popMongo.AssemblyInfoInputs.cache
+/home/mgarcia/testes/popMongo/obj/Debug/netcoreapp2.1/popMongo.AssemblyInfo.cs
+/home/mgarcia/testes/popMongo/obj/Debug/netcoreapp2.1/popMongo.dll
+/home/mgarcia/testes/popMongo/obj/Debug/netcoreapp2.1/popMongo.pdb

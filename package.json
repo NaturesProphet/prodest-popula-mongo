@@ -1,0 +1,14 @@
+{
+  "name": "popmongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo": "docker run --name mongo -d -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=rootpass -e MONGO_INITDB_DATABASE=banco -p 8081:8081 -p 27017:27017 -p 27018:27018 -p 27019:27019 mongo",
+    "stop:mongo": "docker stop mongo && docker rm mongo",
+    "shell:mongo": "docker exec -i -t mongo /bin/bash"
+  },
+  "author": "Prodest",
+  "license": "ISC"
+}
