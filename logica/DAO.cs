@@ -27,16 +27,27 @@ namespace popMongo
             this.MongoConnectionURL = "mongodb://" + this.mongoUser + ":" + this.mongoPassword + "@" +
             this.mongoHost + ":" + this.mongoPort + "/" + this.mongoAuthMethod;
         }
-        public void connect(String message)
+        public void salva(String message)
         {
-            Console.WriteLine(this.MongoConnectionURL);
-            MongoClient client = new MongoClient(this.MongoConnectionURL);
-            IMongoDatabase db = client.GetDatabase(this.mongoDatabase);
-            var collection = db.GetCollection<BsonDocument>(this.mongoCollection);
-            var document = BsonSerializer.Deserialize<BsonDocument>(message);
-            Console.WriteLine(document);
-            collection.InsertOneAsync(document);
-            Console.WriteLine("query " + collection);
+            try
+            {
+                MongoClient client = new MongoClient(this.MongoConnectionURL);
+                IMongoDatabase db = client.GetDatabase(this.mongoDatabase);
+                var collection = db.GetCollection<BsonDocument>(this.mongoCollection);
+                var document = BsonSerializer.Deserialize<BsonDocument>(message);
+                Console.WriteLine(document);
+                collection.InsertOne(document);
+            }
+            catch (Exception e)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\n#############################################");
+                Console.WriteLine("Erro ao tentar salvar no MongoDB");
+                Console.WriteLine("#############################################");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine(e.Message + "\n");
+                Console.ResetColor();
+            }
         }
     }
 }
