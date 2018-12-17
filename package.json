@@ -12,7 +12,8 @@
     "stop:rabbit": "docker stop rabbit && docker rm rabbit",
     "sendflood:rabbit": "node tools/enviaFloodRabbit.js",
     "send:rabbit": "node tools/enviaRabbit.js",
-    "escuta:rabbit": "node tools/leRabbit.js"
+    "escuta:rabbit": "node tools/leRabbit.js",
+    "stopdocker": "docker stop $(docker ps -q -a) && docker rm $(docker ps -q -a)"
   },
   "author": "Prodest",
   "license": "ISC"
