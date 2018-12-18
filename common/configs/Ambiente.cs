@@ -83,7 +83,7 @@ namespace popMongo
         public static String getRabbitChannelName()
         {
             string canal = Environment.GetEnvironmentVariable("RABBIT_CHANNEL");
-            if (canal is null) canal = "realtime";
+            if (canal is null) canal = "realtime.mongo";
             return canal;
         }
 
