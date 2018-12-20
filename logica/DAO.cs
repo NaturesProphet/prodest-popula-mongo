@@ -35,7 +35,6 @@ namespace popMongo
                 IMongoDatabase db = client.GetDatabase(this.mongoDatabase);
                 var collection = db.GetCollection<BsonDocument>(this.mongoCollection);
                 var document = BsonSerializer.Deserialize<BsonDocument>(message);
-                Console.WriteLine(document);
                 collection.InsertOne(document);
             }
             catch (Exception e)

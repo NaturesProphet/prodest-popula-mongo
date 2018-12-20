@@ -18,7 +18,6 @@ namespace popMongo
             IConnection connection;
             IModel channel;
             String queueName;
-            DAO dao = new DAO();
             try
             {
                 factory = new ConnectionFactory() { HostName = RMQHost };

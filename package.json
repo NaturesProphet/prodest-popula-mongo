@@ -16,5 +16,8 @@
     "stopdocker": "docker stop $(docker ps -q -a) && docker rm $(docker ps -q -a)"
   },
   "author": "Prodest",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "amqplib": "^0.5.3"
+  }
 }
