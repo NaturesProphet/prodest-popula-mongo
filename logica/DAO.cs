@@ -39,15 +39,8 @@ namespace popMongo
             }
             catch (Exception e)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n#############################################");
-                Console.WriteLine("Erro ao tentar salvar no MongoDB");
-                Console.WriteLine("#############################################");
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine(e.Message + "\n");
-                Console.ResetColor();
+                X9.OQueRolouNaParada(e, 2);
             }
         }
     }
 }
-
