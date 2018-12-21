@@ -7,7 +7,7 @@ namespace popMongo
 {
     class Program
     {
-        protected static DAO dao = new DAO();
+        //protected static DAO dao = new DAO();
         protected static string RMQHost = Ambiente.getRabbitHost();
         protected static string RMQTopic = Ambiente.getRabbitTopic();
         protected static string RMQKey = Ambiente.getRabbitKey();
@@ -40,7 +40,7 @@ namespace popMongo
                     {
                         byte[] body = ea.Body;
                         String message = Encoding.UTF8.GetString(body);
-                        dao.salva(message);
+                        //dao.salva(message);
                     };
                     channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumidorEventos);
                 }
