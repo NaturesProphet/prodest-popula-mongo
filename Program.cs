@@ -71,7 +71,7 @@ namespace popMongo
                         byte[] body = ea.Body;
                         String message = Encoding.UTF8.GetString(body);
                         X9.ShowInfo(3, message);
-                        dao.salva(message);
+                        //dao.salva(message);
                     };
                     channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumidorEventos);
                 }
