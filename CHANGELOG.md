@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://gitlab.es.gov.br/espm/Transcol-Online/Realtime/popula-mongo/compare/v1.1.3...v1.1.4) (2019-01-16)
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://gitlab.es.gov.br/espm/popMongo/compare/v1.1.2...v1.1.3) (2018-12-21)
 
